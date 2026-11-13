@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods, 5 failed,  10 skipped,  28 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC05_AddToWishList" class="method navigator-link" hash-for-method="testAddToWishList">testAddToWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC06_AddAffiliate" class="method navigator-link" hash-for-method="testAddAffiliate">testAddAffiliate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC06_AddAffiliate" class="method navigator-link" hash-for-method="testAddAffiliate">testAddAffiliate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC06_AddAffiliate" class="method navigator-link" hash-for-method="testAddAffiliate">testAddAffiliate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_AddToCart" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_AddToCart" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_AddToCart" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC04_CompletePurchase" class="method navigator-link" hash-for-method="testCompletePurchase">testCompletePurchase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC01_LaunchApplication" class="method navigator-link" hash-for-method="testLaunchApplication">testLaunchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC01_LaunchApplication" class="method navigator-link" hash-for-method="testLaunchApplication">testLaunchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC01_LaunchApplication" class="method navigator-link" hash-for-method="testLaunchApplication">testLaunchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(parurajeshmail@gmail.com, Test12)">testLogin(parurajeshmail@gmail.com, Test12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(krishnarajelakiya@gmail.com, test111)">testLogin(krishnarajelakiya@gmail.com, test111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(apushedwoman@gmail.com, password123)">testLogin(apushedwoman@gmail.com, password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(nirmala.kalluru24@gmail.com, test29)">testLogin(nirmala.kalluru24@gmail.com, test29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(hichamkhachiai@gmail.com, hicham123)">testLogin(hichamkhachiai@gmail.com, hicham123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(krishnarajelakiya@gmail.com, test111)">testLogin(krishnarajelakiya@gmail.com, test111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(hichamkhachiai@gmail.com, hicham123)">testLogin(hichamkhachiai@gmail.com, hicham123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(nirmala.kalluru24@gmail.com, test29)">testLogin(nirmala.kalluru24@gmail.com, test29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(apushedwoman@gmail.com, password123)">testLogin(apushedwoman@gmail.com, password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(parurajeshmail@gmail.com, Test12)">testLogin(parurajeshmail@gmail.com, Test12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(apushedwoman@gmail.com, password123)">testLogin(apushedwoman@gmail.com, password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(parurajeshmail@gmail.com, Test12)">testLogin(parurajeshmail@gmail.com, Test12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(krishnarajelakiya@gmail.com, test111)">testLogin(krishnarajelakiya@gmail.com, test111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(hichamkhachiai@gmail.com, hicham123)">testLogin(hichamkhachiai@gmail.com, hicham123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login2_DataDriven" class="method navigator-link" hash-for-method="testLogin(nirmala.kalluru24@gmail.com, test29)">testLogin(nirmala.kalluru24@gmail.com, test29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_Login" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC04_CompletePurchase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.cloudberrystore.services/index.php?route=product/product&amp;language=en-gb&amp;product_id=47&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c9363e63-2373-400a-a921-406a505bd27e, clickElement {id=6f79145b-3b68-4c65-b09e-ddfec3bfd41d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50669, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[RemoteWebDriver: firefox on mac (c9363e63-2373-400a-a921-406a505bd27e)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: c9363e63-2373-400a-a921-406a505bd27e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[normalize-space()=&apos;login page&apos;]&quot;}
+  (Session info: chrome=157.0.8103.39)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [874e13df1341711d4c40fe95c0af085a, findElement {using=xpath, value=//strong[normalize-space()=&apos;login page&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62851}, goog:processID: 50928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 874e13df1341711d4c40fe95c0af085a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CheckoutPage.clickLogin(CheckoutPage.java:39)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC05_AddToWishList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.cloudberrystore.services/index.php?route=product/product&amp;language=en-gb&amp;product_id=47&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d99b188d-6e9f-444b-be36-db4ffd58d16b, clickElement {id=4e576cc2-59ee-4c70-81ea-cf9ec74f9fb2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50433, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[RemoteWebDriver: firefox on mac (d99b188d-6e9f-444b-be36-db4ffd58d16b)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: d99b188d-6e9f-444b-be36-db4ffd58d16b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=157.0.4341.42)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [83106df83d21282b1f1028dd08a9ec15, clickElement {id=f.18DCEE282F352274636AA757446FCAB9.d.0697C92FE0B45D8B7E2847EBF849C104.e.7762}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 50389, ms:edgeOptions: {debuggerAddress: localhost:61265}, msedge: {msedgedriverVersion: 157.0.4341.46 (a0c6bd61d788..., userDataDir: /var/folders/f6/g5h_qq312xq...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: MicrosoftEdge on mac (83106df83d21282b1f1028dd08a9ec15)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 83106df83d21282b1f1028dd08a9ec15
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=157.0.8103.39)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6891ddde57ba062736b24201ad0f0a4e, clickElement {id=f.5BCB9793B72336E711775281092037DF.d.D68B771D3806DBEC5BA192A3B9409C37.e.7752}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61262}, goog:processID: 50385, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (6891ddde57ba062736b24201ad0f0a4e)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 6891ddde57ba062736b24201ad0f0a4e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC04_CompletePurchase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[normalize-space()=&apos;Your order has been placed!&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c9363e63-2373-400a-a921-406a505bd27e, findElement {using=xpath, value=//h1[normalize-space()=&apos;Your order has been placed!&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50669, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: c9363e63-2373-400a-a921-406a505bd27e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.ConfirmationPage.isOrderPlaced(ConfirmationPage.java:17)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:149)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.cloudberrystore.services/index.php?route=product/product&amp;language=en-gb&amp;product_id=47&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c9363e63-2373-400a-a921-406a505bd27e, clickElement {id=adfa70d8-f2c0-487b-be5d-6bb6064e65e4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50669, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[RemoteWebDriver: firefox on mac (c9363e63-2373-400a-a921-406a505bd27e)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: c9363e63-2373-400a-a921-406a505bd27e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=157.0.8103.39)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [874e13df1341711d4c40fe95c0af085a, clickElement {id=f.6D91C1BA9D302F91AE3337E31BDB016E.d.E5B9A57D8653B3B26E96BEE3EED0EA9C.e.7600}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62851}, goog:processID: 50928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (874e13df1341711d4c40fe95c0af085a)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 874e13df1341711d4c40fe95c0af085a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;button-payment-methods&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1331, 540). Other element would receive the click: &lt;div id=&quot;modal-shipping&quot; class=&quot;modal show&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=157.0.8103.39)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [874e13df1341711d4c40fe95c0af085a, clickElement {id=f.6D91C1BA9D302F91AE3337E31BDB016E.d.76BB300ED600155C4AC389253C5CB5D0.e.6203}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62851}, goog:processID: 50928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (874e13df1341711d4c40fe95c0af085a)] -&gt; id: button-payment-methods]
+Session ID: 874e13df1341711d4c40fe95c0af085a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CheckoutPage.completeCheckout(CheckoutPage.java:47)
+	at testCases.TC04_CompletePurchase.testCompletePurchase(TC04_CompletePurchase.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC05_AddToWishList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.cloudberrystore.services/index.php?route=product/product&amp;language=en-gb&amp;product_id=47&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d99b188d-6e9f-444b-be36-db4ffd58d16b, clickElement {id=3785099a-3424-459e-9c9f-de9d8fc5560b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50433, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[RemoteWebDriver: firefox on mac (d99b188d-6e9f-444b-be36-db4ffd58d16b)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: d99b188d-6e9f-444b-be36-db4ffd58d16b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.cloudberrystore.services/index.php?route=product/product&amp;language=en-gb&amp;product_id=47&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d99b188d-6e9f-444b-be36-db4ffd58d16b, clickElement {id=6d696c6d-02a0-48b1-9a03-a30784802b60}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 160.0, moz:accessibilityChecks: false, moz:buildID: 20261104181552, moz:firefoxOptions: {binary: /Users/elakiyakrishnaraj/.c..., prefs: {remote.active-protocols: 1}}, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 23.5.0, moz:processID: 50433, moz:profile: /var/folders/f6/g5h_qq312xq..., moz:shutdownTimeout: 73000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[RemoteWebDriver: firefox on mac (d99b188d-6e9f-444b-be36-db4ffd58d16b)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: d99b188d-6e9f-444b-be36-db4ffd58d16b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=157.0.4341.42)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [83106df83d21282b1f1028dd08a9ec15, clickElement {id=f.18DCEE282F352274636AA757446FCAB9.d.798356BB0FBD0B88E5CFF025AD9F2725.e.5118}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 50389, ms:edgeOptions: {debuggerAddress: localhost:61265}, msedge: {msedgedriverVersion: 157.0.4341.46 (a0c6bd61d788..., userDataDir: /var/folders/f6/g5h_qq312xq...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: MicrosoftEdge on mac (83106df83d21282b1f1028dd08a9ec15)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 83106df83d21282b1f1028dd08a9ec15
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=157.0.4341.42)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [83106df83d21282b1f1028dd08a9ec15, clickElement {id=f.18DCEE282F352274636AA757446FCAB9.d.2B8A57275760912D5CAF7FE84CAADB17.e.2473}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 157.0.4341.42, fedcm:accounts: true, goog:processID: 50389, ms:edgeOptions: {debuggerAddress: localhost:61265}, msedge: {msedgedriverVersion: 157.0.4341.46 (a0c6bd61d788..., userDataDir: /var/folders/f6/g5h_qq312xq...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.4341.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: MicrosoftEdge on mac (83106df83d21282b1f1028dd08a9ec15)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 83106df83d21282b1f1028dd08a9ec15
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=157.0.8103.39)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6891ddde57ba062736b24201ad0f0a4e, clickElement {id=f.5BCB9793B72336E711775281092037DF.d.9D512C80FCA384CE321D7F4C6ED6D35B.e.2469}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61262}, goog:processID: 50385, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (6891ddde57ba062736b24201ad0f0a4e)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 6891ddde57ba062736b24201ad0f0a4e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToWishList">
+                  </a> <!-- testAddToWishList -->
+                  <span class="method-name">testAddToWishList</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=157.0.8103.39)
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;25.0.5&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6891ddde57ba062736b24201ad0f0a4e, clickElement {id=f.5BCB9793B72336E711775281092037DF.d.831F734F5AFE48B734BBC1122034FDF0.e.5111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: /var/folders/f6/g5h_qq312xq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61262}, goog:processID: 50385, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://localhost:4444/session..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int..., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (6891ddde57ba062736b24201ad0f0a4e)] -&gt; xpath: //a[normalize-space()=&apos;HP LP3065&apos;]]
+Session ID: 6891ddde57ba062736b24201ad0f0a4e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.CategoryPage.selectHPProduct(CategoryPage.java:51)
+	at testCases.TC05_AddToWishList.testAddToWishList(TC05_AddToWishList.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC06_AddAffiliate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAffiliate">
+                  </a> <!-- testAddAffiliate -->
+                  <span class="method-name">testAddAffiliate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAffiliate">
+                  </a> <!-- testAddAffiliate -->
+                  <span class="method-name">testAddAffiliate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAffiliate">
+                  </a> <!-- testAddAffiliate -->
+                  <span class="method-name">testAddAffiliate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC02_Login2_DataDriven</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(parurajeshmail@gmail.com, Test12)">
+                  </a> <!-- testLogin(parurajeshmail@gmail.com, Test12) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(parurajeshmail@gmail.com,Test12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(krishnarajelakiya@gmail.com, test111)">
+                  </a> <!-- testLogin(krishnarajelakiya@gmail.com, test111) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(krishnarajelakiya@gmail.com,test111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(apushedwoman@gmail.com, password123)">
+                  </a> <!-- testLogin(apushedwoman@gmail.com, password123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(apushedwoman@gmail.com,password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(nirmala.kalluru24@gmail.com, test29)">
+                  </a> <!-- testLogin(nirmala.kalluru24@gmail.com, test29) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(nirmala.kalluru24@gmail.com,test29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(hichamkhachiai@gmail.com, hicham123)">
+                  </a> <!-- testLogin(hichamkhachiai@gmail.com, hicham123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(hichamkhachiai@gmail.com,hicham123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(krishnarajelakiya@gmail.com, test111)">
+                  </a> <!-- testLogin(krishnarajelakiya@gmail.com, test111) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(krishnarajelakiya@gmail.com,test111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(hichamkhachiai@gmail.com, hicham123)">
+                  </a> <!-- testLogin(hichamkhachiai@gmail.com, hicham123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(hichamkhachiai@gmail.com,hicham123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(nirmala.kalluru24@gmail.com, test29)">
+                  </a> <!-- testLogin(nirmala.kalluru24@gmail.com, test29) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(nirmala.kalluru24@gmail.com,test29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(apushedwoman@gmail.com, password123)">
+                  </a> <!-- testLogin(apushedwoman@gmail.com, password123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(apushedwoman@gmail.com,password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(parurajeshmail@gmail.com, Test12)">
+                  </a> <!-- testLogin(parurajeshmail@gmail.com, Test12) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(parurajeshmail@gmail.com,Test12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(apushedwoman@gmail.com, password123)">
+                  </a> <!-- testLogin(apushedwoman@gmail.com, password123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(apushedwoman@gmail.com,password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(parurajeshmail@gmail.com, Test12)">
+                  </a> <!-- testLogin(parurajeshmail@gmail.com, Test12) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(parurajeshmail@gmail.com,Test12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(krishnarajelakiya@gmail.com, test111)">
+                  </a> <!-- testLogin(krishnarajelakiya@gmail.com, test111) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(krishnarajelakiya@gmail.com,test111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(hichamkhachiai@gmail.com, hicham123)">
+                  </a> <!-- testLogin(hichamkhachiai@gmail.com, hicham123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(hichamkhachiai@gmail.com,hicham123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(nirmala.kalluru24@gmail.com, test29)">
+                  </a> <!-- testLogin(nirmala.kalluru24@gmail.com, test29) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(nirmala.kalluru24@gmail.com,test29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC02_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC01_LaunchApplication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLaunchApplication">
+                  </a> <!-- testLaunchApplication -->
+                  <span class="method-name">testLaunchApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLaunchApplication">
+                  </a> <!-- testLaunchApplication -->
+                  <span class="method-name">testLaunchApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLaunchApplication">
+                  </a> <!-- testLaunchApplication -->
+                  <span class="method-name">testLaunchApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC04_CompletePurchase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompletePurchase">
+                  </a> <!-- testCompletePurchase -->
+                  <span class="method-name">testCompletePurchase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC03_AddToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/elakiyakrishnaraj/Workspaces/Oct2026BatchTest/EcommerceHubV5/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+      &lt;include name=&quot;datadriven&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+      &lt;include name=&quot;datadriven&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;chromeTest&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;mac&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC01_LaunchApplication&quot;/&gt;
+      &lt;class name=&quot;testCases.TC03_AddToCart&quot;/&gt;
+      &lt;class name=&quot;testCases.TC05_AddToWishList&quot;/&gt;
+      &lt;class name=&quot;testCases.TC06_AddAffiliate&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login2_DataDriven&quot;/&gt;
+      &lt;class name=&quot;testCases.TC04_CompletePurchase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- chromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;firefoxTest&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;mac&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC01_LaunchApplication&quot;/&gt;
+      &lt;class name=&quot;testCases.TC03_AddToCart&quot;/&gt;
+      &lt;class name=&quot;testCases.TC05_AddToWishList&quot;/&gt;
+      &lt;class name=&quot;testCases.TC06_AddAffiliate&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login2_DataDriven&quot;/&gt;
+      &lt;class name=&quot;testCases.TC04_CompletePurchase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- firefoxTest --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;edgeTest&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;mac&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC01_LaunchApplication&quot;/&gt;
+      &lt;class name=&quot;testCases.TC03_AddToCart&quot;/&gt;
+      &lt;class name=&quot;testCases.TC05_AddToWishList&quot;/&gt;
+      &lt;class name=&quot;testCases.TC06_AddAffiliate&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login&quot;/&gt;
+      &lt;class name=&quot;testCases.TC02_Login2_DataDriven&quot;/&gt;
+      &lt;class name=&quot;testCases.TC04_CompletePurchase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- edgeTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">chromeTest (7 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">firefoxTest (7 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">edgeTest (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">datadriven</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddAffiliate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddToWishList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCompletePurchase</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLaunchApplication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCompletePurchase</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLaunchApplication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCompletePurchase')
+data.setCell(0, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(0, 3, 17695);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddToWishList')
+data.setCell(1, 2, 'testCases.TC05_AddToWishList')
+data.setCell(1, 3, 14655);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCompletePurchase')
+data.setCell(2, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(2, 3, 14295);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAddToWishList')
+data.setCell(3, 2, 'testCases.TC05_AddToWishList')
+data.setCell(3, 3, 13869);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAddToWishList')
+data.setCell(4, 2, 'testCases.TC05_AddToWishList')
+data.setCell(4, 3, 13074);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAddToWishList')
+data.setCell(5, 2, 'testCases.TC05_AddToWishList')
+data.setCell(5, 3, 13021);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAddToWishList')
+data.setCell(6, 2, 'testCases.TC05_AddToWishList')
+data.setCell(6, 3, 13021);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testAddToWishList')
+data.setCell(7, 2, 'testCases.TC05_AddToWishList')
+data.setCell(7, 3, 12785);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCompletePurchase')
+data.setCell(8, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(8, 3, 12471);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCompletePurchase')
+data.setCell(9, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(9, 3, 8798);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCompletePurchase')
+data.setCell(10, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(10, 3, 7762);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testAddToCart')
+data.setCell(11, 2, 'testCases.TC03_AddToCart')
+data.setCell(11, 3, 4256);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testAddAffiliate')
+data.setCell(12, 2, 'testCases.TC06_AddAffiliate')
+data.setCell(12, 3, 4253);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testAddAffiliate')
+data.setCell(13, 2, 'testCases.TC06_AddAffiliate')
+data.setCell(13, 3, 3717);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testAddToCart')
+data.setCell(14, 2, 'testCases.TC03_AddToCart')
+data.setCell(14, 3, 3592);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAddToCart')
+data.setCell(15, 2, 'testCases.TC03_AddToCart')
+data.setCell(15, 3, 3559);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testAddAffiliate')
+data.setCell(16, 2, 'testCases.TC06_AddAffiliate')
+data.setCell(16, 3, 3379);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testAddToWishList')
+data.setCell(17, 2, 'testCases.TC05_AddToWishList')
+data.setCell(17, 3, 2777);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testAddToWishList')
+data.setCell(18, 2, 'testCases.TC05_AddToWishList')
+data.setCell(18, 3, 2676);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testAddToWishList')
+data.setCell(19, 2, 'testCases.TC05_AddToWishList')
+data.setCell(19, 3, 2669);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testCompletePurchase')
+data.setCell(20, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(20, 3, 2589);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testCompletePurchase')
+data.setCell(21, 2, 'testCases.TC04_CompletePurchase')
+data.setCell(21, 3, 2188);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testLogin')
+data.setCell(22, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(22, 3, 1498);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testLogin')
+data.setCell(23, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(23, 3, 1346);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testLogin')
+data.setCell(24, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(24, 3, 1199);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testLogin')
+data.setCell(25, 2, 'testCases.TC02_Login')
+data.setCell(25, 3, 1160);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testLogin')
+data.setCell(26, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(26, 3, 1078);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testLogin')
+data.setCell(27, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(27, 3, 1060);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testLogin')
+data.setCell(28, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(28, 3, 1042);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testLogin')
+data.setCell(29, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(29, 3, 1040);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testLogin')
+data.setCell(30, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(30, 3, 1036);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testLogin')
+data.setCell(31, 2, 'testCases.TC02_Login')
+data.setCell(31, 3, 1022);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testLogin')
+data.setCell(32, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(32, 3, 1004);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testLogin')
+data.setCell(33, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(33, 3, 994);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testLogin')
+data.setCell(34, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(34, 3, 982);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testLogin')
+data.setCell(35, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(35, 3, 977);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testLogin')
+data.setCell(36, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(36, 3, 949);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testLogin')
+data.setCell(37, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(37, 3, 944);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testLogin')
+data.setCell(38, 2, 'testCases.TC02_Login2_DataDriven')
+data.setCell(38, 3, 897);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testLogin')
+data.setCell(39, 2, 'testCases.TC02_Login')
+data.setCell(39, 3, 678);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testLaunchApplication')
+data.setCell(40, 2, 'testCases.TC01_LaunchApplication')
+data.setCell(40, 3, 79);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testLaunchApplication')
+data.setCell(41, 2, 'testCases.TC01_LaunchApplication')
+data.setCell(41, 3, 43);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testLaunchApplication')
+data.setCell(42, 2, 'testCases.TC01_LaunchApplication')
+data.setCell(42, 3, 36);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC01_LaunchApplication</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLaunchApplication</span>
+                <span class="method-start">5012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">5064 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">testLaunchApplication</span>
+                <span class="method-start">5120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">5157 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC03_AddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">5190 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">5278 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC01_LaunchApplication</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLaunchApplication</span>
+                <span class="method-start">6758 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">6841 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC03_AddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">7736 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">8273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">8955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">11566 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">11867 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">12063 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC03_AddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">12515 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">12635 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC03_AddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">15826 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">16242 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">16318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">17084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">20642 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">23431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">26105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">29056 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">29343 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC06_AddAffiliate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">29659 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">29872 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC06_AddAffiliate</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddAffiliate</span>
+                <span class="method-start">34893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">38279 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">38820 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">42712 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">43215 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">43392 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login2_DataDriven</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">43937 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddToWishList</span>
+                <span class="method-start">44529 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login2_DataDriven</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin(krishnarajelakiya@gmail.com, test111)</span>
+                <span class="method-start">50157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(parurajeshmail@gmail.com, Test12)</span>
+                <span class="method-start">51363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(nirmala.kalluru24@gmail.com, test29)</span>
+                <span class="method-start">52373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(apushedwoman@gmail.com, password123)</span>
+                <span class="method-start">53273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(hichamkhachiai@gmail.com, hicham123)</span>
+                <span class="method-start">54251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">55202 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC04_CompletePurchase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, firefox)</span>
+                <span class="method-start">56354 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC05_AddToWishList</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">57795 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">58102 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC06_AddAffiliate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">59752 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">60037 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddAffiliate</span>
+                <span class="method-start">62383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddAffiliate</span>
+                <span class="method-start">63402 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC04_CompletePurchase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">63438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC06_AddAffiliate</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">66106 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">66314 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC06_AddAffiliate</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">67661 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">67876 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">69533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">70558 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login2_DataDriven</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">70665 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">71084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">72248 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login2_DataDriven</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">72349 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testLogin(krishnarajelakiya@gmail.com, test111)</span>
+                <span class="method-start">73169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(parurajeshmail@gmail.com, Test12)</span>
+                <span class="method-start">74521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(krishnarajelakiya@gmail.com, test111)</span>
+                <span class="method-start">75047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(nirmala.kalluru24@gmail.com, test29)</span>
+                <span class="method-start">75583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(parurajeshmail@gmail.com, Test12)</span>
+                <span class="method-start">76547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(apushedwoman@gmail.com, password123)</span>
+                <span class="method-start">76621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(hichamkhachiai@gmail.com, hicham123)</span>
+                <span class="method-start">77607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(nirmala.kalluru24@gmail.com, test29)</span>
+                <span class="method-start">77627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">78604 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(apushedwoman@gmail.com, password123)</span>
+                <span class="method-start">78672 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC04_CompletePurchase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, chrome)</span>
+                <span class="method-start">78758 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC02_Login2_DataDriven</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin(hichamkhachiai@gmail.com, hicham123)</span>
+                <span class="method-start">79621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">80664 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC04_CompletePurchase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openApp(mac, edge)</span>
+                <span class="method-start">80787 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">81136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">81373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">83729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">85281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">86116 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">90177 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">93047 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCompletePurchase</span>
+                <span class="method-start">102656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">117236 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
